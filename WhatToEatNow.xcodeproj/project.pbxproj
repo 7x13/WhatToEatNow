@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		ED34B0D419F1710100F1572C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D319F1710100F1572C /* AppDelegate.swift */; };
-		ED34B0D619F1710100F1572C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D519F1710100F1572C /* FirstViewController.swift */; };
-		ED34B0D819F1710100F1572C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D719F1710100F1572C /* SecondViewController.swift */; };
+		ED34B0D619F1710100F1572C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D519F1710100F1572C /* HomeViewController.swift */; };
+		ED34B0D819F1710100F1572C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D719F1710100F1572C /* SearchViewController.swift */; };
 		ED34B0DB19F1710100F1572C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED34B0D919F1710100F1572C /* Main.storyboard */; };
 		ED34B0DD19F1710100F1572C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED34B0DC19F1710100F1572C /* Images.xcassets */; };
 		ED34B0E019F1710100F1572C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED34B0DE19F1710100F1572C /* LaunchScreen.xib */; };
-		ED34B0EC19F1710100F1572C /* WhatToEatNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0EB19F1710100F1572C /* WhatToEatNowTests.swift */; };
+		ED34B0EC19F1710100F1572C /* WhatEatNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0EB19F1710100F1572C /* WhatEatNowTests.swift */; };
+		EDFAD2F819F72BF100AED25B /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAD2F719F72BF100AED25B /* SelectViewController.swift */; };
+		EDFAD2F919F72BF100AED25B /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAD2F719F72BF100AED25B /* SelectViewController.swift */; };
+		EDFAD2FB19F72CD800AED25B /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAD2FA19F72CD800AED25B /* MyViewController.swift */; };
+		EDFAD2FC19F72CD800AED25B /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAD2FA19F72CD800AED25B /* MyViewController.swift */; };
+		EDFAD2FE19F72D5900AED25B /* CommunicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAD2FD19F72D5900AED25B /* CommunicateViewController.swift */; };
+		EDFAD2FF19F72D5900AED25B /* CommunicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAD2FD19F72D5900AED25B /* CommunicateViewController.swift */; };
+		EDFAD30019F72F4900AED25B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D319F1710100F1572C /* AppDelegate.swift */; };
+		EDFAD30119F72F4E00AED25B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34B0D519F1710100F1572C /* HomeViewController.swift */; };
+		EDFAD30319F7316200AED25B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFAD30219F7316200AED25B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +39,18 @@
 		ED34B0CE19F1710100F1572C /* WhatToEatNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToEatNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED34B0D219F1710100F1572C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED34B0D319F1710100F1572C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED34B0D519F1710100F1572C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		ED34B0D719F1710100F1572C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		ED34B0D519F1710100F1572C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ED34B0D719F1710100F1572C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ED34B0DA19F1710100F1572C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED34B0DC19F1710100F1572C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED34B0DF19F1710100F1572C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ED34B0E519F1710100F1572C /* WhatToEatNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToEatNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED34B0EA19F1710100F1572C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED34B0EB19F1710100F1572C /* WhatToEatNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToEatNowTests.swift; sourceTree = "<group>"; };
+		ED34B0EB19F1710100F1572C /* WhatEatNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatEatNowTests.swift; sourceTree = "<group>"; };
+		EDFAD2F719F72BF100AED25B /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		EDFAD2FA19F72CD800AED25B /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		EDFAD2FD19F72D5900AED25B /* CommunicateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicateViewController.swift; sourceTree = "<group>"; };
+		EDFAD30219F7316200AED25B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +74,9 @@
 		ED34B0C519F1710100F1572C = {
 			isa = PBXGroup;
 			children = (
-				ED34B0D019F1710100F1572C /* WhatToEatNow */,
-				ED34B0E819F1710100F1572C /* WhatToEatNowTests */,
+				EDFAD30219F7316200AED25B /* Default-568h@2x.png */,
+				ED34B0D019F1710100F1572C /* WhatEatNow */,
+				ED34B0E819F1710100F1572C /* WhatEatNowTests */,
 				ED34B0CF19F1710100F1572C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,17 +90,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED34B0D019F1710100F1572C /* WhatToEatNow */ = {
+		ED34B0D019F1710100F1572C /* WhatEatNow */ = {
 			isa = PBXGroup;
 			children = (
 				ED34B0D319F1710100F1572C /* AppDelegate.swift */,
-				ED34B0D519F1710100F1572C /* FirstViewController.swift */,
-				ED34B0D719F1710100F1572C /* SecondViewController.swift */,
+				ED34B0D519F1710100F1572C /* HomeViewController.swift */,
+				ED34B0D719F1710100F1572C /* SearchViewController.swift */,
+				EDFAD2F719F72BF100AED25B /* SelectViewController.swift */,
+				EDFAD2FD19F72D5900AED25B /* CommunicateViewController.swift */,
+				EDFAD2FA19F72CD800AED25B /* MyViewController.swift */,
 				ED34B0D919F1710100F1572C /* Main.storyboard */,
 				ED34B0DC19F1710100F1572C /* Images.xcassets */,
 				ED34B0DE19F1710100F1572C /* LaunchScreen.xib */,
 				ED34B0D119F1710100F1572C /* Supporting Files */,
 			);
+			name = WhatEatNow;
 			path = WhatToEatNow;
 			sourceTree = "<group>";
 		};
@@ -98,12 +116,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		ED34B0E819F1710100F1572C /* WhatToEatNowTests */ = {
+		ED34B0E819F1710100F1572C /* WhatEatNowTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED34B0EB19F1710100F1572C /* WhatToEatNowTests.swift */,
+				ED34B0EB19F1710100F1572C /* WhatEatNowTests.swift */,
 				ED34B0E919F1710100F1572C /* Supporting Files */,
 			);
+			name = WhatEatNowTests;
 			path = WhatToEatNowTests;
 			sourceTree = "<group>";
 		};
@@ -196,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED34B0DB19F1710100F1572C /* Main.storyboard in Resources */,
+				EDFAD30319F7316200AED25B /* Default-568h@2x.png in Resources */,
 				ED34B0E019F1710100F1572C /* LaunchScreen.xib in Resources */,
 				ED34B0DD19F1710100F1572C /* Images.xcassets in Resources */,
 			);
@@ -215,9 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED34B0D819F1710100F1572C /* SecondViewController.swift in Sources */,
+				EDFAD2F819F72BF100AED25B /* SelectViewController.swift in Sources */,
+				ED34B0D819F1710100F1572C /* SearchViewController.swift in Sources */,
+				EDFAD2FE19F72D5900AED25B /* CommunicateViewController.swift in Sources */,
 				ED34B0D419F1710100F1572C /* AppDelegate.swift in Sources */,
-				ED34B0D619F1710100F1572C /* FirstViewController.swift in Sources */,
+				EDFAD2FB19F72CD800AED25B /* MyViewController.swift in Sources */,
+				ED34B0D619F1710100F1572C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +248,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED34B0EC19F1710100F1572C /* WhatToEatNowTests.swift in Sources */,
+				EDFAD2F919F72BF100AED25B /* SelectViewController.swift in Sources */,
+				EDFAD2FC19F72CD800AED25B /* MyViewController.swift in Sources */,
+				EDFAD2FF19F72D5900AED25B /* CommunicateViewController.swift in Sources */,
+				EDFAD30019F72F4900AED25B /* AppDelegate.swift in Sources */,
+				ED34B0EC19F1710100F1572C /* WhatEatNowTests.swift in Sources */,
+				EDFAD30119F72F4E00AED25B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhatToEatNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhatToEatNow;
 			};
 			name = Debug;
 		};
@@ -354,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WhatToEatNow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhatToEatNow;
 			};
 			name = Release;
 		};
@@ -372,7 +400,7 @@
 				);
 				INFOPLIST_FILE = WhatToEatNowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhatToEatNowTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatToEatNow.app/WhatToEatNow";
 			};
 			name = Debug;
@@ -387,7 +415,7 @@
 				);
 				INFOPLIST_FILE = WhatToEatNowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WhatToEatNowTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatToEatNow.app/WhatToEatNow";
 			};
 			name = Release;
@@ -411,6 +439,7 @@
 				ED34B0F119F1710100F1572C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED34B0F219F1710100F1572C /* Build configuration list for PBXNativeTarget "WhatToEatNowTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +448,7 @@
 				ED34B0F419F1710100F1572C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

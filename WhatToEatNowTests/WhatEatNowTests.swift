@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class WhatToEatNowTests: XCTestCase {
+class WhatEatNowTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
