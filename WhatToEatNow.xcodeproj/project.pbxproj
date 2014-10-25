@@ -50,7 +50,7 @@
 		EDFAD2F719F72BF100AED25B /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		EDFAD2FA19F72CD800AED25B /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		EDFAD2FD19F72D5900AED25B /* CommunicateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicateViewController.swift; sourceTree = "<group>"; };
-		EDFAD30219F7316200AED25B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EDFAD30219F7316200AED25B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 		ED34B0C519F1710100F1572C = {
 			isa = PBXGroup;
 			children = (
-				EDFAD30219F7316200AED25B /* Default-568h@2x.png */,
 				ED34B0D019F1710100F1572C /* WhatEatNow */,
 				ED34B0E819F1710100F1572C /* WhatEatNowTests */,
 				ED34B0CF19F1710100F1572C /* Products */,
@@ -111,6 +110,7 @@
 		ED34B0D119F1710100F1572C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDFAD30219F7316200AED25B /* Default-568h@2x.png */,
 				ED34B0D219F1710100F1572C /* Info.plist */,
 			);
 			name = "Supporting Files";
