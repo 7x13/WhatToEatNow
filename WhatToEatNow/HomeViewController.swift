@@ -8,13 +8,15 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         // 解决StatusBar和程序页面重合的问题
         self.automaticallyAdjustsScrollViewInsets = false
-        setNavigationBar()
+        self.edgesForExtendedLayout = .None
+        self.extendedLayoutIncludesOpaqueBars = false
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,17 +26,12 @@ class HomeViewController: UIViewController {
     }
 
    /**
-    * 添加NavigationBar
+    * 修改NavigationBar
     */
     func setNavigationBar() {
-        var screenRect:CGRect = self.view.bounds
-        var navBar:UINavigationBar = UINavigationBar(frame: CGRectMake(0, 20, screenRect.size.width, 44))
-        var navItem:UINavigationItem = UINavigationItem(title: "Home")
-        navBar.pushNavigationItem(navItem, animated: true)
-        self.view.addSubview(navBar)
-        var item : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Reply, target: self, action: "navigationBackButton:")
-        navItem.leftBarButtonItem = item
-        navBar.setItems(NSArray(object: navItem), animated: true)
+        self.navigationItem.title = "今日推荐"
+        var item : UIBarButtonItem = UIBarButtonItem(title: "历史记录", style: .Plain, target: self, action: "editingMode:")
+        self.navigationItem.rightBarButtonItem = item
     }
 
 }
