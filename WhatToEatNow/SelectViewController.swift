@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-class SelectViewController: UIViewController {
+class SelectViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    @IBOutlet weak var camera: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +23,13 @@ class SelectViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addPicEvent(sender: UIButton) {
+        var sourceType : UIImagePickerControllerSourceType = .Camera
+        var picker : UIImagePickerController = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        picker.sourceType = sourceType
+        self.presentViewController(picker, animated: true, completion: nil)
+    }
     
 }

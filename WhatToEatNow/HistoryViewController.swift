@@ -1,26 +1,23 @@
 //
-//  HomeViewController.swift
+//  HistoryViewController.swift
 //  WhatToEatNow
 //
-//  Created by 崔宇 on 14/11/15.
+//  Created by 崔宇 on 14/11/16.
 //  Copyright (c) 2014年 cuiyu. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-
-class HomeViewController: UITableViewController {
-    var foods = [Food]()
+class HistoryViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationBar()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
         
-        self.foods = [Food(category: "staple" , name: "rice"),
-            Food(category: "staple", name: "steamed bread"),
-            Food(category: "hot dish", name: "shredded potatoes"),
-            Food(category: "hot dish", name: "eggplant")]
-        //Do any additional setup after loading the view, typically from a nib.
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,47 +25,29 @@ class HomeViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /**
-    * 修改NavigationBar
-    */
-    func setNavigationBar() {
-        self.navigationItem.title = "今日推荐"
-        var item : UIBarButtonItem = UIBarButtonItem(title: "历史记录", style: .Plain, target: self, action: "historyMode:")
-        self.navigationItem.rightBarButtonItem = item
-    }
-    
-    func historyMode(button: UIBarButtonItem) {
-        var con:(HistoryViewController) = HistoryViewController()
-        con.title = ""
-        // 设置下一级菜单的导航控制栏的左边返回按钮
-        self.navigationController?.pushViewController(con, animated: true)
-    }
-    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return 0
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return self.foods.count
+        return 0
     }
     
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        var title = foods[indexPath.row].name
-        cell.textLabel.text = title
+    let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
     
     // Configure the cell...
     
     return cell
     }
-    
+    */
     
     /*
     // Override to support conditional editing of the table view.
@@ -114,5 +93,5 @@ class HomeViewController: UITableViewController {
     // Pass the selected object to the new view controller.
     }
     */
+    
 }
-

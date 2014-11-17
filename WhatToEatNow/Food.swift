@@ -2,7 +2,7 @@
 //  Food.swift
 //  WhatToEatNow
 //
-//  Created by 崔宇 on 14/11/8.
+//  Created by 崔宇 on 14/11/15.
 //  Copyright (c) 2014年 cuiyu. All rights reserved.
 //
 
