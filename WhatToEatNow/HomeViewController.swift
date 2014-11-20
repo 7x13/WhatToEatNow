@@ -69,24 +69,6 @@ class HomeViewController: UITableViewController {
     return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        self.performSegueWithIdentifier("homeDetail", sender: tableView)
-        
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "homeDetail") {
-            
-            let detailViewController = segue.destinationViewController as UIViewController
-            let indexPath = self.tableView.indexPathForSelectedRow()!
-            let destinationTitle = self.foods[indexPath.row].name
-            println(destinationTitle)
-            
-            detailViewController.title = destinationTitle
-        }
-    }
-    
     
     /*
     // Override to support conditional editing of the table view.

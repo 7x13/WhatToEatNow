@@ -81,32 +81,6 @@ class SearchViewController: UITableViewController, UISearchBarDelegate, UISearch
         self.filterContentForSearchText(self.searchDisplayController!.searchBar.text,scope: selectedScop)
         return true
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        self.performSegueWithIdentifier("searchDetail", sender: tableView)
-        
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "searchDetail") {
-            let detailViewController = segue.destinationViewController as UIViewController
-            if(sender as UITableView == self.searchDisplayController!.searchResultsTableView){
-                let indexPath = self.searchDisplayController!.searchResultsTableView.indexPathForSelectedRow()!
-                let destinationTitle = self.filteredFood[indexPath.row].name
-                
-                detailViewController.title = destinationTitle
-
-                
-            }else {
-                
-                let indexPath = self.tableView.indexPathForSelectedRow()!
-                let destinationTitle = self.foods[indexPath.row].name
-                
-                detailViewController.title = destinationTitle
-            }
-        }
-    }
 }
 
 

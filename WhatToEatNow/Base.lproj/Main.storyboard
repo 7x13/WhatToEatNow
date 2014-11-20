@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -108,6 +108,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mwx-td-2Oz" id="wAv-oU-kMn">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ut2-D1-6NV" kind="showDetail" id="W71-ax-qF2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -118,7 +121,6 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="KUQ-VZ-Rh3"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="jd4-cv-gzF" id="0HQ-QQ-sKI"/>
-                        <segue destination="ZWV-ju-7vq" kind="show" identifier="homeDetail" id="33X-Rj-BiY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkt-xC-pTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -196,6 +198,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mOV-XN-LRE" id="GjF-AC-ZJC">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ut2-D1-6NV" kind="showDetail" id="7KW-rS-q3L"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -206,7 +211,6 @@
                     <navigationItem key="navigationItem" title="Search" id="HLB-2Y-pZG"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="RRI-tX-6Cc" id="eGE-pb-LML"/>
-                        <segue destination="ZWV-ju-7vq" kind="show" identifier="searchDetail" id="Z4a-kH-mee"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mr5-Ea-LEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,24 +259,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXp-6O-brq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1260" y="-1859"/>
-        </scene>
-        <!--HomeDetail View Controller-->
-        <scene sceneID="ahc-kV-dTw">
-            <objects>
-                <viewController id="ZWV-ju-7vq" userLabel="HomeDetail View Controller" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q7k-qe-t07"/>
-                        <viewControllerLayoutGuide type="bottom" id="4Bb-az-Jwy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="iwp-1O-xGI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2iN-xb-Zcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-941" y="-1089"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -342,6 +328,6 @@
         <image name="first" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="33X-Rj-BiY"/>
+        <segue reference="7KW-rS-q3L"/>
     </inferredMetricsTieBreakers>
 </document>
