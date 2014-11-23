@@ -60,12 +60,12 @@ class HomeViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         var title = foods[indexPath.row].name
         cell.textLabel.text = title
-    
-    // Configure the cell...
-    
+        
+        // Configure the cell...
+        
     return cell
     }
     
